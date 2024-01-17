@@ -111,7 +111,7 @@ export class DataService {
     }
 
     this._minutes = [];
-    for (let x = 0; x < 60; x = x + 5) {
+    for (let x = 0; x < 60; x = x + 1) {
       this._minutes.push(<CronJobsSelectOption>{ value: x, label: `${x}` });
     }
   }
